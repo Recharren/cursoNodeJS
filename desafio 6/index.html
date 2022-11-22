@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de inicio</title>
+</head>
+<body>
+    <h1>App para cargar personas y mascotas.</h1>
+    <div style="border: 3px solid blue; display: inline-block;">
+        <h2>Ingrese una nueva persona 🧍‍♂️​</h2>
+        <form action='http://localhost:8080/personas/guardar' method="post">
+            <label for="nombre">Ingrese nombre</label>
+            <input type="text" name="nombre" placeholder="Nombre">
+            <input type="text" name="apellido" placeholder="Apellido">
+            <input type="number" name="edad" placeholder="Edad">
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <br><br>
+    <div style="border: 3px solid rgb(255, 38, 0); display: inline-block;">
+        <h2>Ingrese una nueva mascota 🐕​</h2>
+        <form action='http://localhost:8080/mascotas/guardar' method="post">
+            <label for="nombre">Ingrese nombre</label>
+            <input type="text" name="nombre" placeholder="Nombre">
+            <input type="text" name="raza" placeholder="Raza">
+            <input type="number" name="edad" placeholder="Edad">
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <h2 id="mensaje"></h2>
+    <script src="app.js"></script>
+</body>
+</html>
